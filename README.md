@@ -23,4 +23,4 @@ video processing (codecs, encode/decode, colour conversion) · Web3
 
 #### Contact
 
-[LinkedIn](https://www.linkedin.com/in/egor-fyodorov/) · egorfyodorovv@gmail.com
+[LinkedIn](https://www.linkedin.com/in/egor-fyodorov/) · egorfyodorovv@gmail.com · [Telegram](https://t.me/egor_fyodorov)
