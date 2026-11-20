@@ -1,26 +1,29 @@
-### Egor Fyodorov
+# Egor Fyodorov
 
-Backend engineer working on high-load asynchronous services in Python and Go.
-Currently focused on GPU media processing and systems programming.
+I'm a senior Python backend engineer working on asynchronous services, Kafka event processing, and document search. At CDNvideo, I designed and maintained a cache-invalidation service that handled 10,000 requests per second across 300+ CDN nodes.
 
-#### Projects
+## Open Source
 
-**[trtvideo](https://github.com/egor-fedorov/trtvideo)** — GPU-resident TensorRT
-runtime for video models. Frames never leave VRAM across NVDEC → CV-CUDA →
-TensorRT → NVENC. Under a reproducible benchmark methodology it beats tuned
-VapourSynth implementations by up to 25.5% end-to-end FPS on SPAN, using
-2.1–21.2× less CPU and 1.6–4.9× less peak VRAM.
+### [trtvideo](https://github.com/egor-fedorov/trtvideo)
 
-**[safetensors.mojo](https://github.com/egor-fedorov/safetensors.mojo)** —
-independent implementation of the Safetensors format in Mojo. Published in the
-`modular-community` conda channel and listed on the official Mojo package index.
-Strict format validation, mmap zero-copy tensor views, deterministic atomic writes.
+GPU-resident video upscaling with TensorRT. Frames stay on the GPU through decoding, preprocessing, inference, and encoding. In the RTX 4090 benchmark, SPAN at 720p → 1440p achieved 9.1% higher end-to-end throughput than TheAnimeScripter. [Benchmark results](https://github.com/egor-fedorov/trtvideo#measured-throughput-and-resource-use)
 
-#### Interests
+### [safetensors.mojo](https://github.com/egor-fedorov/safetensors.mojo)
 
-Linux and operating systems · parallel programming · GPU computing · compilers ·
-video processing (codecs, encode/decode, colour conversion) · Web3
+An independent implementation of the Safetensors format in Mojo with memory-mapped reads, atomic writes, and byte-for-byte compatibility tests against the reference serializer. [Conda package](https://prefix.dev/channels/modular-community/packages/safetensors-mojo)
 
-#### Contact
+### [telegram-mcp](https://github.com/egor-fedorov/telegram-mcp)
 
-[LinkedIn](https://www.linkedin.com/in/egor-fyodorov/) · egorfyodorovv@gmail.com · [Telegram](https://t.me/egor_fyodorov)
+A local Python MCP server for reading and searching Telegram. Subscriptions retain batches until the client acknowledges them, and file sends support idempotency.
+
+### [whisper-transcribator](https://github.com/egor-fedorov/whisper-transcribator)
+
+An offline C++17 command-line tool for transcribing audio and video with whisper.cpp and FFmpeg. It exports plain text, SRT, WebVTT, and JSON. [Prebuilt releases](https://github.com/egor-fedorov/whisper-transcribator/releases)
+
+## Interests
+
+Linux and operating systems · parallel programming · GPU computing · compilers · video processing · Web3
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/egor-fyodorov/) · [Email](mailto:egorfyodorovv@gmail.com) · [Telegram](https://t.me/egor_fyodorov)
